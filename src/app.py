@@ -6,23 +6,20 @@ from io import BytesIO
 # Adicionando um favicon (ícone do navegador) com Streamlit
 st.set_page_config(
     page_title="Academia de Xadrez",
-    page_icon="🦄",
-    #page_icon="../images/Chess_king.png"
+    page_icon="../images/Chess_king.png"
     )
 
 def home():
     st.title("Academia de Xadrez")
     st.write("Academia de Xadrez é um centro de estudos dedicado a jogadores iniciantes que desejam evoluir para níveis intermediários e avançados. Com uma metodologia estruturada, oferecemos aulas teóricas e práticas, abordando desde os fundamentos do jogo até estratégias avançadas, táticas e preparação para torneios. Nosso objetivo é desenvolver o pensamento crítico, a capacidade de cálculo e a visão estratégica dos alunos, proporcionando uma base sólida para que possam competir em alto nível. Seja você um entusiasta ou alguém que busca se tornar um mestre, a Academia de Xadrez é o lugar ideal para aprimorar suas habilidades e alcançar novos patamares no jogo. ♟️🔥")
-    st.image("https://github.com/alexandreleeal/chessite/blob/main/images/logo2.webp")
-    st.write("""Domine o Jogo e Eleve Seu Nível no Xadrez! ♟️🔥
-
+    st.markdown("#### Domine o Jogo e Eleve Seu Nível no Xadrez! ♟️🔥")
+    st.video("https://www.youtube.com/watch?v=19RoPcxs9bw")
+    st.write("""
 Seja você um iniciante ou alguém buscando aprimorar suas habilidades, a Academia de Xadrez é o lugar ideal para evoluir no jogo. Aqui, você aprenderá desde os fundamentos até estratégias avançadas, desenvolvendo sua visão tática, raciocínio lógico e capacidade de tomada de decisões. Aprimore seu jogo com ensinamentos exclusivos e junte-se a uma comunidade apaixonada por xadrez!
-
-🔽 No próximo parágrafo, descubra como podemos transformar sua jornada no xadrez! 🚀
 
 Acelere sua evolução no xadrez com um treinamento personalizado! Agora você pode ter aulas individuais com professores especializados, que irão focar no seu estilo de jogo e ajudar você a superar desafios específicos. Seja para dominar aberturas, melhorar sua visão tática ou se preparar para torneios, nossas aulas são feitas sob medida para você!
 """)
-    st.markdown("#### **Clique em [Professores] e solicite sua aula particular agora mesmo!** 🚀")
+    st.markdown("#### **Clique em Professores e solicite sua aula particular agora mesmo!** 🚀")
 
 def aulas():
     st.title("Aulas de Xadrez da Academia")
@@ -58,7 +55,7 @@ def professores():
     st.title("Professores")
     st.write("Aqui você pode conhecer os professores da Academia de Xadrez.")
     st.markdown("### Prof. Alexandre Garcia Leal")
-    st.image("../images/professor_alexandre.png")
+    st.image("https://yt3.googleusercontent.com/wCBFLwj_6qLRf4DhqZXGNB-uq3MhJokHp_yIq34Jsj_qlDAUC52Sa59pXkC1QN0D1zC2WA9h=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj")
     st.markdown("""Canal no Youtube: [Link](https://www.youtube.com/@agleal1)  
                 Contato: [Link](https://www.instagram.com/alexandre_leal_2022/)  
                 Aula particular online personalizada para o aluno levando em conta seu conhecimento sobre xadrez.""")
