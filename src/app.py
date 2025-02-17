@@ -1,15 +1,16 @@
 import streamlit as st
 from io import BytesIO
+from config import *
 
 # Adicionando um favicon (ícone do navegador) com Streamlit
 st.set_page_config(
-    page_title="Academia de Xadrez",
-    page_icon="../images/Chess_king.png"
+    page_title=page_title,
+    page_icon=page_icon
     )
 
 def home():
     st.title("Academia de Xadrez")
-    st.write("Academia de Xadrez é um centro de estudos dedicado a jogadores iniciantes que desejam evoluir para níveis intermediários e avançados. Com uma metodologia estruturada, oferecemos aulas teóricas e práticas, abordando desde os fundamentos do jogo até estratégias avançadas, táticas e preparação para torneios. Nosso objetivo é desenvolver o pensamento crítico, a capacidade de cálculo e a visão estratégica dos alunos, proporcionando uma base sólida para que possam competir em alto nível. Seja você um entusiasta ou alguém que busca se tornar um mestre, a Academia de Xadrez é o lugar ideal para aprimorar suas habilidades e alcançar novos patamares no jogo. ♟️🔥")
+    st.write("Academia de Xadrez é um centro de estudos dedicado a jogadores iniciantes que desejam evoluir para níveis intermediários e avançados. Com uma metodologia estruturada, oferecemos aulas teóricas e práticas, abordando desde os fundamentos do jogo até estratégias avançadas, táticas e preparação para torneios. Nosso objetivo é desenvolver o pensamento crítico, a capacidade de cálculo e a visão estratégica dos alunos, proporcionando uma base sólida para que possam competir em alto nível. Seja você um entusiasta ou alguém que busca se tornar um mestre, a Academia de Xadrez é o lugar ideal para aprimorar suas habilidades e alcançar novos patamares no jogo.")
     st.markdown("#### Domine o Jogo e Eleve Seu Nível no Xadrez! ♟️🔥")
     st.video("https://www.youtube.com/watch?v=19RoPcxs9bw")
     st.write("""
@@ -17,15 +18,9 @@ Seja você um iniciante ou alguém buscando aprimorar suas habilidades, a Academ
 
 Acelere sua evolução no xadrez com um treinamento personalizado! Agora você pode ter aulas individuais com professores especializados, que irão focar no seu estilo de jogo e ajudar você a superar desafios específicos. Seja para dominar aberturas, melhorar sua visão tática ou se preparar para torneios, nossas aulas são feitas sob medida para você!
 """)
-    st.markdown("#### **Clique no botão abaixo e solicite sua aula particular agora mesmo!** 🚀")
-    # Número de WhatsApp no formato internacional (exemplo: +55 para Brasil)
-    whatsapp_number = "+5511945717027"  # Substitua pelo número correto
-    # Mensagem pré-definida
-    message = "Olá, gostaria de agendar uma aula de xadrez com algum professor da academia."
-    # Criando o link do WhatsApp
-    whatsapp_link = f"https://wa.me/{whatsapp_number}?text={message.replace(' ', '%20')}"
+    st.markdown("#### **Clique no botão abaixo e solicite sua aula particular!** 🚀")
     # Botão para abrir o WhatsApp
-    if st.button("📲 Solicite sua aula agora mesmo!"):
+    if st.button("📲 **Solicite sua aula agora mesmo!**"):
         st.markdown(f'<meta http-equiv="refresh" content="0; url={whatsapp_link}">', unsafe_allow_html=True)
 
 def aulas():
@@ -124,6 +119,9 @@ def professores():
     st.markdown("""Canal no Youtube: [Link](https://www.youtube.com/@agleal1)  
                 Contato: [Link](https://www.instagram.com/alexandre_leal_2022/)  
                 Aula particular online personalizada para o aluno levando em conta seu conhecimento sobre xadrez.""")
+    # Botão para abrir o WhatsApp
+    if st.button("📲 **Solicite sua aula agora mesmo!**"):
+        st.markdown(f'<meta http-equiv="refresh" content="0; url={whatsapp_link}">', unsafe_allow_html=True)
     
 def puzzles():
     st.title("Quebra-cabeças")
