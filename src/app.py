@@ -19,9 +19,21 @@ Seja você um iniciante ou alguém buscando aprimorar suas habilidades, a Academ
 Acelere sua evolução no xadrez com um treinamento personalizado! Agora você pode ter aulas individuais com professores especializados, que irão focar no seu estilo de jogo e ajudar você a superar desafios específicos. Seja para dominar aberturas, melhorar sua visão tática ou se preparar para torneios, nossas aulas são feitas sob medida para você!
 """)
     st.markdown("#### **Clique no botão abaixo e solicite sua aula particular!** 🚀")
-    # Botão para abrir o WhatsApp
-    if st.button("📲 **Solicite sua aula agora mesmo!**"):
-        st.markdown(f'<meta http-equiv="refresh" content="0; url={whatsapp_link}">', unsafe_allow_html=True)
+    # Botão para abrir o Instagram
+    st.markdown("""
+<a href="https://www.instagram.com/alexandre_leal_2022/" target="_blank">
+    <button style="
+        background-color: #000000;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;">
+        📲 Solicite sua aula agora mesmo!
+    </button>
+</a>
+""", unsafe_allow_html=True)
 
 def aulas():
     st.title("Aulas da Academia de Xadrez")
@@ -119,9 +131,21 @@ def professores():
     st.markdown("""Canal no Youtube: [Link](https://www.youtube.com/@agleal1)  
                 Contato: [Link](https://www.instagram.com/alexandre_leal_2022/)  
                 Aula particular online personalizada para o aluno levando em conta seu conhecimento sobre xadrez.""")
-    # Botão para abrir o WhatsApp
-    if st.button("📲 **Solicite sua aula agora mesmo!**"):
-        st.markdown(f'<meta http-equiv="refresh" content="0; url={whatsapp_link}">', unsafe_allow_html=True)
+    # Botão para abrir o Instagram
+    st.markdown("""
+<a href="https://www.instagram.com/alexandre_leal_2022/" target="_blank">
+    <button style="
+        background-color: #000000;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;">
+        📲 Solicite sua aula agora mesmo!
+    </button>
+</a>
+""", unsafe_allow_html=True)
     
 def puzzles():
     st.title("Quebra-cabeças")
