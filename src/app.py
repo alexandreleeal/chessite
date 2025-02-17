@@ -13,7 +13,7 @@ st.set_page_config(
 def home():
     st.title("Academia de Xadrez")
     st.write("Academia de Xadrez é um centro de estudos dedicado a jogadores iniciantes que desejam evoluir para níveis intermediários e avançados. Com uma metodologia estruturada, oferecemos aulas teóricas e práticas, abordando desde os fundamentos do jogo até estratégias avançadas, táticas e preparação para torneios. Nosso objetivo é desenvolver o pensamento crítico, a capacidade de cálculo e a visão estratégica dos alunos, proporcionando uma base sólida para que possam competir em alto nível. Seja você um entusiasta ou alguém que busca se tornar um mestre, a Academia de Xadrez é o lugar ideal para aprimorar suas habilidades e alcançar novos patamares no jogo. ♟️🔥")
-    st.image("https://github.com/alexandreleeal/chessite/blob/main/images/logo2.webp")
+    st.image("https://raw.githubusercontent.com/alexandreleeal/chessite/refs/heads/main/images/logo2.webp")
     st.write("""Domine o Jogo e Eleve Seu Nível no Xadrez! ♟️🔥
 
 Seja você um iniciante ou alguém buscando aprimorar suas habilidades, a Academia de Xadrez é o lugar ideal para evoluir no jogo. Aqui, você aprenderá desde os fundamentos até estratégias avançadas, desenvolvendo sua visão tática, raciocínio lógico e capacidade de tomada de decisões. Aprimore seu jogo com ensinamentos exclusivos e junte-se a uma comunidade apaixonada por xadrez!
